@@ -1,5 +1,5 @@
-// src/api.js
-const API_URL = 'http://localhost:5000'; // URL на вашия сървър
+
+const API_URL = 'http://localhost:5000'; 
 
 export const login = async (credentials) => {
   const response = await fetch(`${API_URL}/login`, {

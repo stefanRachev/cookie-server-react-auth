@@ -49,7 +49,7 @@ function Register({ onLogin }) {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({ email, password }),
-        credentials: "include", // Важно за изпращане на кукитата
+        credentials: "include", 
       });
 
       if (response.ok) {

@@ -40,7 +40,7 @@ function Login({ onLogin }) {
       });
 
       if (response.ok) {
-        onLogin(); // Извикваме onLogin при успешен логин
+        onLogin(); 
         navigate("/");
       } else {
         const data = await response.json();

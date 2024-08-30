@@ -8,7 +8,7 @@ function DataCreator({ isAuthenticated }) {
   const [field1, setField1] = useState("");
   const [field2, setField2] = useState("");
 
-  // Функция за създаване на нови данни
+ 
   const handleCreate = async (e) => {
     e.preventDefault();
     if (!isAuthenticated) {
@@ -23,7 +23,7 @@ function DataCreator({ isAuthenticated }) {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({ field1, field2 }),
-        credentials: "include", // Важно за изпращане на кукитата
+        credentials: "include", 
       });
 
       if (response.ok) {
